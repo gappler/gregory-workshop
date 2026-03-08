@@ -21,6 +21,28 @@
 
 ---
 
+## Workshop Orientation (Before Any Skills)
+
+A brief discussion — 10 minutes, no terminal required — that every participant needs before building anything.
+
+**Claude vs. Claude Code vs. Cowork**
+
+| Product | What it is | Who it's for | Gregory focus |
+|---------|-----------|--------------|---------------|
+| **Claude (claude.ai)** | Conversational interface — chat, draft, research, iterate. No file system access. Nothing persists between sessions unless you save it. | Everyone | Starting point, not the destination |
+| **Claude Code** | Agentic tool running in terminal or VSCode. Direct file system access — reads, writes, commits, calls APIs. Claude with hands. | Teams ready to build | Gregory's primary tool |
+| **Cowork** | Desktop tool for non-developers to automate file and task management. Sits between claude.ai and Claude Code in technical sophistication. | Non-technical users | Worth knowing, not the workshop focus |
+
+**The key distinction:** claude.ai is a conversation. Claude Code is a collaborator that works inside your project. The difference is file access and persistence — Claude Code knows where things live, builds on prior work, and produces outputs that stay.
+
+**Also cover:**
+- What a project folder is and why it matters
+- What CLAUDE.md does — how Claude Code knows the rules of your project
+- Where brand assets live and why that makes every output better
+- The difference between a skill and a workflow
+
+---
+
 ## The Ten
 
 | # | Skill | Lifecycle Ref | Tier | Integration Required | Automation Potential | Build Priority |
