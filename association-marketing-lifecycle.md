@@ -230,6 +230,47 @@ Identity        Voice            Programs         Engagement        Conferences 
 
 ---
 
+### PM-H. Collaborative Workflows & Version Control
+
+**What it is:** The infrastructure and practices that allow marketing teams to work on shared content together — with version history, approval workflows, and a single source of truth. GitHub for marketers, not just developers.
+
+**Where it lives:** Cross-stage — applies to any content or document that multiple people touch
+
+**Why it matters for associations:** Most association marketing teams collaborate by emailing files, maintaining competing versions in Dropbox, or using Google Docs with no governance. The result is version confusion, lost institutional knowledge, and no audit trail. GitHub — used through Claude Code — solves this in a way that also makes AI assistance more powerful: when prompts, templates, and brand assets live in a shared repo, every team member benefits from improvements anyone makes.
+
+**What this looks like in practice:**
+- Brand platform, copy/voice guide, and approved messaging live in a shared repo — not someone's hard drive
+- Campaign briefs and content drafts are versioned — you can see what changed and why
+- Claude Code skills are shared across the team — one person builds a renewal campaign skill, everyone uses it
+- Approval workflows are documented in the repo — what requires review, who reviews it, what the sign-off process looks like
+- New staff onboard faster because institutional knowledge is in the repo, not in someone's head
+
+**How we do it:**
+- Set up shared GitHub organization or repo for marketing team
+- Establish folder structure: brand assets, campaign templates, skills, approved copy, briefs
+- Define commit conventions: what goes in, how it's labeled, what gets reviewed before merge
+- Train team on basic Git workflow: pull, edit, commit, push, review
+- Integrate with Claude Code so team members can invoke shared skills from their own machines
+
+**Inputs:** Existing file structure, team size and technical comfort level, current collaboration tools
+
+**Human judgment required:**
+- What level of Git sophistication is realistic for a non-technical marketing team
+- Which assets belong in version control vs. which stay in Google Drive or SharePoint
+- Governance: who can merge, who reviews, who owns the repo
+
+**What comes out:**
+- A working shared GitHub repo for the marketing team
+- `[org]-repo-structure.md` — documented folder structure and conventions
+- `[org]-collaboration-guide.md` — simple guide for non-technical team members
+
+**Gregory skill:** Not yet built
+**Status:** Documented. One of the more technically ambitious workshop deliverables — but also one of the most differentiating. Teams that leave with a shared repo and a working collaboration workflow are operating at a different level than teams that don't.
+
+*Note: This is where Claude Code's value as a team tool — not just an individual tool — becomes visible. The shared skills library is the payoff: one person builds a session description skill, the whole team runs it.*
+
+---
+
 ## Project Management Summary
 
 | # | Deliverable | Gregory Skill | Status |
@@ -241,6 +282,7 @@ Identity        Voice            Programs         Engagement        Conferences 
 | PM-E | Meeting Notes & Action Items | Not built | Documented — high AI leverage, low barrier |
 | PM-F | Status Report | Not built | Documented |
 | PM-G | Vendor & Agency Management | Not built | Documented |
+| PM-H | Collaborative Workflows & Version Control | Not built | Documented — differentiating |
 
 *Project management is arguably the most universally applicable section of this lifecycle — every association marketing team, regardless of size or sophistication, does this work. And almost none of them do it well. This is where Gregory can have immediate, visible impact from day one of a workshop.*
 
@@ -829,31 +871,47 @@ Identity        Voice            Programs         Engagement        Conferences 
 
 ### 1G. Brand Architecture
 
-**What it is:** A map of how the organization's sub-brands, programs, certifications, chapters, and conferences relate to the parent brand — and a set of rules for naming, visual relationships, and messaging hierarchy across the portfolio.
+**What it is:** A map of how the organization's sub-brands, programs, certifications, chapters, and conferences relate to the parent brand — and a governing framework for naming, visual relationships, and messaging hierarchy across the full portfolio. The foundation for integrated marketing.
 
-**Where it lives:** Stage 1, follows brand platform — particularly relevant for large or complex associations
+**Where it lives:** Stage 1, follows brand platform — prerequisite for any integrated marketing effort
 
-**Why it matters for associations:** Most associations have accumulated program names, certification brands, conference identities, and chapter structures over decades with no governing logic. The result is a fragmented portfolio that dilutes the parent brand and confuses members. (AIA example: AIA, AIAU, Conference on Architecture, AIA Contract Documents, ArchiPac — five distinct identities with varying relationships to the parent.)
+**Why it's foundational for integrated marketing:** You cannot run an integrated marketing program if your portfolio is fragmented. When the annual conference has its own identity disconnected from the parent brand, when programs are named inconsistently, when chapters operate as independent fiefdoms — every campaign requires extra explanation and every member touchpoint dilutes rather than reinforces brand equity. Brand architecture solves this by establishing the rules that make integration possible.
+
+**Why it matters for associations specifically:** Most associations have accumulated sub-brands over decades with no governing logic. A certification program launched in 1998 has its own logo. A conference rebranded in 2008 without reference to the parent. A new digital platform launched last year chose its own name without consulting anyone. The result is a portfolio that confuses members and forces staff to constantly explain what connects to what.
+
+**AIA example:** AIA, AIAU, Conference on Architecture, AIA Contract Documents, ArchiPac — five distinct identities, varying degrees of relationship to the parent brand, no explicit governing framework documented in the brand platform.
+
+**The three architecture models:**
+- **Monolithic (branded house)** — everything under the parent brand. AIA Conference on Architecture, AIA Contract Documents, AIA Foundation. Strong parent brand equity flows to everything. Less flexibility for sub-brands to develop distinct personalities.
+- **Endorsed** — sub-brands have their own identity but carry the parent's endorsement. "Conference on Architecture, an AIA event." Parent brand provides credibility; sub-brand has room to breathe.
+- **Pluralistic (house of brands)** — sub-brands operate independently with no visible parent connection. Rare for associations; more common in corporate portfolios. High maintenance cost.
 
 **How we do it:**
-- Inventory all named entities in the portfolio
-- Map current visual and verbal relationships to parent brand
-- Identify conflicts, redundancies, and gaps
-- Apply brand architecture model (monolithic, endorsed, pluralistic) as appropriate
-- Draft naming and relationship rules for new additions
+- Inventory all named entities: programs, certifications, events, publications, platforms, chapters, foundations, political action committees
+- Map current visual and verbal relationships to parent brand — what exists, what's implied, what's inconsistent
+- Assess parent brand equity: is the parent brand strong enough to lend value to sub-brands, or do sub-brands need to stand on their own?
+- Select architecture model appropriate to organizational strategy
+- Draft naming conventions and relationship rules for the portfolio
+- Apply rules to existing portfolio: what changes, what stays, what phases out
+- Document rules for future additions: how new programs get named, how they relate to the parent
 
-**Inputs:** Full inventory of programs, certifications, events, chapters; existing brand guidelines if any
+**Inputs:** Full portfolio inventory, existing brand guidelines, brand platform, member research on brand awareness by program
 
 **Human judgment required:**
-- Which architecture model fits the organization's strategy
-- How much disruption is acceptable to existing sub-brands with their own equity
-- Stakeholder politics around program names
+- Architecture model selection — strategic and political decision, not just analytical
+- Change management — existing sub-brands have internal champions and external equity; changes require stakeholder management
+- Sequencing — what changes immediately vs. what phases in over time
+- Visual identity implications — brand architecture changes often trigger design work
 
 **What comes out:**
-- `[org]-brand-architecture.md` — portfolio map, relationship model, naming rules
+- `[org]-portfolio-inventory.md` — complete inventory of all named entities with current brand relationship mapped
+- `[org]-brand-architecture.md` — chosen model, naming conventions, relationship rules, application to existing portfolio, rules for future additions
+- `[org]-brand-architecture-summary.md` — one-page summary for leadership and board alignment
 
 **Gregory skill:** Not yet built
-**Status:** Documented. Complex enough to require significant human facilitation; Claude assists with inventory and mapping.
+**Status:** Documented. Higher complexity than most Stage 1 skills — requires significant human facilitation and stakeholder alignment. Claude assists with inventory, mapping, and rules documentation. Strong workshop candidate for senior marketing leaders and CMOs.
+
+*Note: Brand architecture is the prerequisite for integrated marketing. An organization cannot run a campaign that meaningfully connects membership, education, advocacy, and conference without first establishing that those things are visibly part of the same family. This is why it belongs in Stage 1 — not as administrative housekeeping, but as strategic infrastructure.*
 
 ---
 
